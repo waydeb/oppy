@@ -22,7 +22,7 @@ setup(
           'aiohttp',
       ],
   classifiers=[
-    'Development Status :: 1.0.0 - Stable',
+    'Development Status :: 5 - Production/Stable',
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.9',
   ],
