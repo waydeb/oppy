@@ -3,14 +3,14 @@
 oppy is the wrapper for use on the osu! v2 api. 
 Version 1.0.0
 
-![repo](https://img.shields.io/github/pipenv/locked/python-version/waydealphax/oppy)
+![repo](https://img.shields.io/github/pipenv/locked/python-version/waydealphax/op.py)
 
 ## Installation
 
 To install please use pip to install oppy
 
 ```bash
-pip install oppy
+pip install op.py
 ```
 
 ## Usage - User Data
