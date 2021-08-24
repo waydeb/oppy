@@ -3,7 +3,9 @@
 oppy is the wrapper for use on the osu! v2 api. 
 Version 1.0.0
 
-![repo](https://img.shields.io/github/pipenv/locked/python-version/waydealphax/op.py)
+![version](https://img.shields.io/pypi/v/op.py?style=for-the-badge)
+![downloads](https://img.shields.io/pypi/dm/op.py?style=for-the-badge)
+![status](https://img.shields.io/pypi/status/op.py?style=for-the-badge)
 
 ## Installation
 
@@ -28,7 +30,7 @@ async def main():
     data.username,
     data.global_rank,
     ) # returns the users raw pp, id, name and global rank
-asyncio.run(main())
+asyncio.get_event_loop().run_until_complete(main())
 ```
 
 ## Usage - Beatmap Data | Lookup
@@ -45,7 +47,7 @@ async def main():
     data.artist,
     data.mapper,
     ) # returns the beatmap id
-asyncio.run(main())
+asyncio.get_event_loop().run_until_complete(main())
 ```
 
 ## Usage - Token
@@ -58,7 +60,7 @@ tk = client.gen_token
 async def main():
     tkn = await tk.gen(client_secret="string", client_id=0) # makes request using oppy.Client.gen_token.gen()
     print(tkn)
-asyncio.run(main())
+asyncio.get_event_loop().run_until_complete(main())
 ```
 
 ## Support
