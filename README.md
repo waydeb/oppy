@@ -3,7 +3,9 @@
 oppy is the wrapper for use on the osu! v2 api. 
 Version 1.0.0
 
-![repo](https://img.shields.io/github/pipenv/locked/python-version/waydealphax/op.py)
+![version](https://img.shields.io/pypi/v/op.py?style=for-the-badge)
+![downloads](https://img.shields.io/pypi/dm/op.py?style=for-the-badge)
+![status](https://img.shields.io/pypi/status/op.py?style=for-the-badge)
 
 ## Installation
 
