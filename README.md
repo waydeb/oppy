@@ -1,6 +1,6 @@
 # oppy (op.py)
 
-oppy is the wrapper for use on the osu! v2 api. 
+oppy is the wrapper for use on the osu! v2 API. 
 Version 1.0.0
 
 ![version](https://img.shields.io/pypi/v/op.py?style=for-the-badge)
@@ -14,6 +14,14 @@ To install please use pip to install oppy
 ```bash
 pip install op.py
 ```
+
+To install the dev version
+
+```bash
+git clone https://github.com/waydealphax/oppy
+cd oppy
+pip install -U .
+``` 
 
 ## Usage - User Data
 
