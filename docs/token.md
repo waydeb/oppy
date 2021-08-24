@@ -1,7 +1,7 @@
 # oppy.Client.gen_token
 Oppy gen_token class
 ______________
-### oppy.Client.gen_token.gen
+### oppy.Client.gen_token.gen \ Example in examples/gen_token.py
 #### Returns
 _________________
 ```json
