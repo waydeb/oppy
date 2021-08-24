@@ -29,7 +29,7 @@ async def main():
     data.id, # User ID
     data.username, # Username
     data.global_rank, # User Global Rank
-    ) # returns the users raw pp, id, name and global rank
+    )
 asyncio.get_event_loop().run_until_complete(main())
 ```
 
@@ -46,7 +46,7 @@ async def main():
     data.id, # Map ID
     data.artist, # Map song artist
     data.mapper, # Map creator
-    ) # returns the beatmap id
+    )
 asyncio.get_event_loop().run_until_complete(main())
 ```
 
