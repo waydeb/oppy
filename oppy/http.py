@@ -4,15 +4,23 @@ import aiohttp
 class Data:
     def __init__(self):
         self.session = aiohttp.ClientSession(headers={
-            "User-Agent": "waydealphax/oppy, v1.0.0 | Data Client"
+            "User-Agent": "waydealphax/oppy, v1.0.1-devel | Data Client"
         })
 
-    async def request(self, endpoint, token):
-        async with self.session.get(url=f"https://osu.ppy.sh/api/v2/{endpoint}", headers={
+    async def request(self, endpoint, **token):
+        if token == None:
+            header = {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            }
+        else:
+             header = {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
             'Authorization': f'Bearer {token}'
-        }) as resp:
+            }
+            
+        async with self.session.get(url=f"https://osu.ppy.sh/api/v2/{endpoint}", headers=header) as resp:
             if resp.status == 404:
                 return await resp.json()
 
@@ -28,7 +36,7 @@ class Data:
 class RqToken:
     def __init__(self):
         self.session = aiohttp.ClientSession(headers={
-            "User-Agent": "waydealphax/oppy, v1.0.0 | Token Client"
+            "User-Agent": "waydealphax/oppy, v1.0.1-devel | Token Client"
         })
 
     async def gen(self, client_id, client_secret):
