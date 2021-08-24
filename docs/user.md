@@ -2,7 +2,7 @@
 ______________
 Oppy user_data class
 _______________
-### oppy.Client.user_data.user()
+### oppy.Client.user_data.user() | Example in examples/userinfo.py
 #### Returns
 
             country_code, # Country Code
