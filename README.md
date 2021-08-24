@@ -25,10 +25,10 @@ user = client.user_data
 async def main():
     data = await user.user(user="peppy", token="a long string") #makes the api request using oppy.Client.user_data.user()
     print(
-    data.pp,
-    data.id,
-    data.username,
-    data.global_rank,
+    data.pp, # User PP
+    data.id, # User ID
+    data.username, # Username
+    data.global_rank, # User Global Rank
     ) # returns the users raw pp, id, name and global rank
 asyncio.get_event_loop().run_until_complete(main())
 ```
@@ -43,9 +43,9 @@ beatmap = client.beatmap_data
 async def main():
     data = await beatmap.lookup(beatmap="big black", token="a long string") #makes the api request using oppy.Client.beatmap_data.lookup()
     print(
-    data.id,
-    data.artist,
-    data.mapper,
+    data.id, # Map ID
+    data.artist, # Map song artist
+    data.mapper, # Map creator
     ) # returns the beatmap id
 asyncio.get_event_loop().run_until_complete(main())
 ```
@@ -59,7 +59,7 @@ client = oppy.Client()
 tk = client.gen_token
 async def main():
     tkn = await tk.gen(client_secret="string", client_id=0) # makes request using oppy.Client.gen_token.gen()
-    print(tkn)
+    print(tkn) # Token
 asyncio.get_event_loop().run_until_complete(main())
 ```
 
