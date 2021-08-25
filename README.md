@@ -23,7 +23,9 @@ cd oppy
 pip install -U .
 ``` 
 
-## Usage - User Data
+## Examples
+
+### Usage - User Data
 
 ```python
 import oppy
@@ -41,7 +43,7 @@ async def main():
 asyncio.get_event_loop().run_until_complete(main())
 ```
 
-## Usage - Beatmap Data | Lookup
+### Usage - Beatmap Data | Lookup
 
 ```python
 import oppy
@@ -58,7 +60,7 @@ async def main():
 asyncio.get_event_loop().run_until_complete(main())
 ```
 
-## Usage - Token
+### Usage - Token
 
 ```python
 import oppy
@@ -70,6 +72,8 @@ async def main():
     print(tkn) # Token
 asyncio.get_event_loop().run_until_complete(main())
 ```
+
+### More examples in exmaples/
 
 ## Support
 Feel free to email me at `wayde@alphaxdev.xyz` or contact me on discord support server https://discord.gg/DAPgevH9EX
