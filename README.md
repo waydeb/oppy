@@ -69,7 +69,7 @@ client = oppy.Client()
 tk = client.gen_token
 async def main():
     tkn = await tk.gen(client_secret="string", client_id=0) # makes request using oppy.Client.gen_token.gen()
-    print(tkn) # Token
+    print(tkn) # Token - I would save this in a file every time you get a new token.
 asyncio.get_event_loop().run_until_complete(main())
 ```
 
