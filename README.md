@@ -1,6 +1,6 @@
 # oppy (op.py)
-=======
-oppy is the wrapper for use on the osu! v2 api. 
+
+oppy is the wrapper for use on the osu! v2 API. 
 Version 1.0.0
 
 ![version](https://img.shields.io/pypi/v/op.py?style=for-the-badge)

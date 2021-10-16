@@ -1,7 +1,7 @@
 from setuptools import setup
 
 
-ver = '1.0.1'
+ver = '1.0.0'
 
 with open('README.md', 'r') as f:
   long_desc = f.read()
