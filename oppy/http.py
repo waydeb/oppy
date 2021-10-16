@@ -4,7 +4,7 @@ import aiohttp
 class Data:
     def __init__(self):
         self.session = aiohttp.ClientSession(headers={
-            "User-Agent": "waydealphax/oppy, v1.0.0 | Data Client"
+            "User-Agent": "waydealphax/oppy, v1.0.1 | Data Client"
         })
 
     async def request(self, endpoint, token):
@@ -28,7 +28,7 @@ class Data:
 class RqToken:
     def __init__(self):
         self.session = aiohttp.ClientSession(headers={
-            "User-Agent": "waydealphax/oppy, v1.0.0 | Token Client"
+            "User-Agent": "waydealphax/oppy, v1.0.1 | Token Client"
         })
 
     async def gen(self, client_id, client_secret):
