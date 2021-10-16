@@ -16,13 +16,5 @@ class BeatmapStats:
         self.cover_url = cover_url
         self.discussion = discussion
         self.length = length
-        self.diffs = diffs  # ?
+        self.diffs = diffs
         self.star_rating = star_rating
-
-
-class BeatmapScores:
-    def __init__(self, first, top5, top10, id):
-        self.first = first
-        self.top5 = top5
-        self.top10 = top10
-        self.id = id
