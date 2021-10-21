@@ -1,7 +1,7 @@
 class User:
     def __init__(self, country_code, country_name, cover_url, discord, id, interests, followers,
                  location, me_html, me_raw, main_mode, playstyle, names, rank_history, global_rank,
-                 country_rank, pp, accuracy, avatar, comment_count,user_group, user_groups, 
+                 country_rank, pp, accuracy, avatar, comment_count, user_group, user_groups,
                  dm_friends_only, profile_order, ranked_and_approved_beatmaps,
                  grade_a, grade_s, grade_sh, grade_ss, grade_ssh, max_combo, ranked_score,
                  total_score, total_hits, twitter, profile_title, profile_title_url, username, website):
@@ -44,6 +44,7 @@ class User:
         self.profile_title_url = profile_title_url
         self.username = username
         self.website = website
+
 
 class UserBm:
     def __init__(self, approved_beatmaps):

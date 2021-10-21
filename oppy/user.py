@@ -34,7 +34,9 @@ class UserData:
         user_groups = data.get("groups")
         dm_friends_only = data.get("pm_friends_only")
         profile_order = data.get("profile_order")
-        ranked_and_approved_beatmaps = data.get("ranked_and_approved_beatmapset_count")
+        ranked_and_approved_beatmaps = data.get(
+            "ranked_and_approved_beatmapset_count"
+        )
         grade_a = data.get("statistics")["grade_counts"]["a"]
         grade_s = data.get("statistics")["grade_counts"]["s"]
         grade_sh = data.get("statistics")["grade_counts"]["sh"]
@@ -74,7 +76,8 @@ class UserData:
             user_groups,  # All user groups they're in (eg. gmt, alm, bm)
             dm_friends_only,  # DM only from friends
             profile_order,  # User Profile layout
-            ranked_and_approved_beatmaps,  # How many ranked + approved beatmaps does the user have
+            # How many ranked + approved beatmaps does the user have
+            ranked_and_approved_beatmaps,
             grade_a,  # A
             grade_s,  # S
             grade_sh,  # S Hidden
