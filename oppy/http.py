@@ -13,6 +13,7 @@ class Data:
             'Content-Type': 'application/json',
             'Authorization': f'Bearer {token}'
         }) as resp:
+
             if resp.status == 404:
                 return await resp.json()
 
@@ -36,7 +37,8 @@ class RqToken:
             "grant_type": "client_credentials",
             "client_id": client_id,
             "client_secret": f"{client_secret}",
-            "scope": "public"}) as resp:
+            "scope": "public"
+        }) as resp:
 
             if resp.status == 404:
                 return 'token endpoint gone'
